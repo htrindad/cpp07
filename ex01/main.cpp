@@ -1,4 +1,4 @@
-#include "iter.hpp"
+#include "iter.h"
 
 class Awesome
 {
@@ -18,15 +18,15 @@ std::ostream & operator<<( std::ostream & o, Awesome const & rhs )
 template< typename T >
 void print( T& x )
 {
-  std::cout << x << std::endl;
+  std::cout << x << '\n';
   return;
 }
 
 int main() {
-  int tab[] = { 0, 1, 2, 3, 4 };
+  std::size_t tab[] = { 0, 1, 2, 3, 4 };
   Awesome tab2[5];
 
-  iter( tab, 5, print<const int> );
+  iter( tab, 5, print<const std::size_t> );
   iter( tab2, 5, print<Awesome> );
 
   return 0;

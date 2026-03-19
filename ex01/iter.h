@@ -6,15 +6,16 @@
 /*   By: htrindad <htrindad@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 17:11:31 by htrindad          #+#    #+#             */
-/*   Updated: 2026/03/19 17:18:29 by htrindad         ###   ########.fr       */
+/*   Updated: 2026/03/19 17:26:23 by htrindad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include <cstdlib>
+#include <iostream>
 
-template <typename T>
-void iter(T *array, std::size_t size, void (*f)(T &))
+template <typename T, typename F>
+void iter(T *array, std::size_t size, F f)
 {
 	if (!array)
 		return ;
