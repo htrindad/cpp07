@@ -23,8 +23,8 @@ int main(void)
 	Awesome a(2), b(4);
 
         swap(a, b);
-        std::cout << a << " " << b << std::endl;
-        std::cout << max(a, b) << std::endl;
-        std::cout << min(a, b) << std::endl;
+        std::cout << a << " " << b << '\n';
+        std::cout << max(a, b) << '\n';
+        std::cout << min(a, b) << '\n';
         return (0);
 }
