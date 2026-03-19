@@ -6,7 +6,7 @@
 /*   By: htrindad <htrindad@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 17:30:58 by htrindad          #+#    #+#             */
-/*   Updated: 2026/03/19 18:03:31 by htrindad         ###   ########.fr       */
+/*   Updated: 2026/03/19 18:07:46 by htrindad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Array
 		}
 		Array &operator=(const Array &ref)
 		{
-			if (this != ref)
+			if (this != &ref)
 			{
 				delete[] arr;
 				size = ref.size;
